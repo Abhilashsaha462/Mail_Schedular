@@ -1,0 +1,21 @@
+<div class="">
+  <mat-dialog-content class="mat-typography" >
+    <form action="" [formGroup]="dialogData">
+      <input type="text" placeholder="Account Name" formControlName="accountName"> <br><br>
+      <h3>Credentials</h3>
+      <input type="text" placeholder="Email" formControlName="email"> <br><br>
+      <input type="text" placeholder="Password" formControlName="password"><br><br>
+      <h3>Incoming Server Details</h3>
+      <input type="text" class="server" placeholder="Incoming Server" formControlName="inServer"><br><br> 
+      <input type="text"  placeholder="Incoming Server Port" formControlName="inServerPort"><br><br>
+      <h3>Outgoing Server Details</h3>
+      <input type="text" class="server" placeholder="Outgoing Server" formControlName="outServer"><br><br>
+      <input type="text"  placeholder="Outgoing Server Port" formControlName="outServerPort">
+      <br><br> 
+    </form>
+   </mat-dialog-content>
+   <mat-dialog-actions align="end">
+    <button class="btn1" mat-button mat-dialog-close (click)="saveData()">Save</button>
+    <button class="btn" mat-button [mat-dialog-close]="true" cdkFocusInitial>Delete</button><br><br>
+   </mat-dialog-actions>
+</div>

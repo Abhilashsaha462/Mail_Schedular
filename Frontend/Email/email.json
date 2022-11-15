@@ -1,0 +1,121 @@
+{
+  "schedule": [
+    {
+      "to": "abcd@gmail.com",
+      "cc": "xyz@gmail.com",
+      "bcc": "abcd@gmail.com",
+      "subject": "Presentation",
+      "body": "How to present the Project.",
+      "date": "2022-08-11",
+      "time": "13:35",
+      "id": 2
+    },
+    {
+      "to": "abhilashsaha462@gmail.com ",
+      "cc": "swapnil@gmail.com",
+      "bcc": "abhilashsaha1@gmail.com",
+      "subject": "PPT",
+      "body": "Project ",
+      "date": "2022-08-11",
+      "time": "02:10",
+      "id": 3
+    },
+    {
+      "to": "abhilashsaha1@gmail.com",
+      "cc": "abhilashsaha462@gmail.com ",
+      "bcc": "abhi1@gmail.com",
+      "subject": "PPT",
+      "body": "project",
+      "date": "2022-08-13",
+      "time": "20:09",
+      "id": 4
+    },
+    {
+      "to": "abcd@gmail.com",
+      "cc": "abhi@gmail.com",
+      "bcc": "abhi1@gmail.com",
+      "subject": "ppt",
+      "body": "project",
+      "date": "2022-08-19",
+      "time": "00:27",
+      "id": 5
+    }
+  ],
+  "mail": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "accountName": "officialaccount",
+      "email": "abhilashsaha1@gmail.com",
+      "password": "123456",
+      "inServer": "abcd",
+      "inServerPort": "80885",
+      "outServer": "xyz",
+      "outServerPort": "8080",
+      "id": 10
+    },
+    {
+      "accountName": "personal",
+      "email": "abhilashsaha123@gmail.com",
+      "password": "123456",
+      "inServer": "abc",
+      "inServerPort": "8500",
+      "outServer": "xyz",
+      "outServerPort": "123456",
+      "id": 11
+    },
+    {
+      "accountName": "personal",
+      "email": "abhilashsaha13@gmail.com",
+      "password": "123456",
+      "inServer": "abc",
+      "inServerPort": "8080",
+      "outServer": "xyz",
+      "outServerPort": "8000",
+      "id": 12
+    },
+    {
+      "accountName": "office",
+      "email": "abhilashsaha1@gmail.com",
+      "password": "123456",
+      "inServer": "ac",
+      "inServerPort": "8085",
+      "outServer": "xz",
+      "outServerPort": "8080",
+      "id": 13
+    },
+    {
+      "accountName": "homeaccount",
+      "email": "abhilashsaha1@gmail.com",
+      "password": "123456",
+      "inServer": "abc",
+      "inServerPort": "8080",
+      "outServer": "xyz",
+      "outServerPort": "8085",
+      "id": 14
+    },
+    {
+      "accountName": "personal_acc",
+      "email": "abhilashsaha462@gmail.com",
+      "password": "123456",
+      "inServer": "abc",
+      "inServerPort": "8080",
+      "outServer": "xyz",
+      "outServerPort": "8085",
+      "id": 15
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

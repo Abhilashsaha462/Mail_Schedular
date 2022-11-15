@@ -1,0 +1,45 @@
+<mat-sidenav-container class="sidenav-container" >
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false" >
+    <mat-nav-list >
+      <a  mat-list-item (click)="openDialog()">+ Add Account</a>
+      <a mat-list-item (click)="get()"><mat-icon >account_circle</mat-icon>Accounts</a>
+      <div>
+        <table border="2">
+            <tr *ngFor="let x of users">
+                <td>
+                  <a  (click)="onCreate1()"></a>
+                  {{ x.accountName }}</td><td>{{ x.email }}</td>
+            </tr>
+        </table>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>Mail Scheduler</span>
+      <a href="" style="margin-left: 700px; color: white;" >
+        <mat-icon>exit_to_app</mat-icon>
+        Logout
+      </a>
+    </mat-toolbar>
+     <h4><span style="margin-left: 5%;" (click)="get1()" >Scheduled Emails</span>
+        <span style="margin-left: 10%;">Sent Emails</span></h4>
+    <hr>
+    <mat-card style="width:40%;height: 50%;" >
+      <div *ngFor="let x of details" style="margin-top: 0.1%;background-color: rgb(91, 90, 90);width: 100%;">
+        <h5 style="margin-left:2%;">
+          <div>{{x.to}}</div> 
+          <div>{{x.subject}}</div>
+          {{x.body}}
+         <h5 style="margin-left: 70%;margin-top: -15%;"> {{x.date}}</h5>
+         <h5 style="margin-left: 70%;margin-top: 5%;">{{x.time}}</h5>
+        </h5>
+      </div>
+    </mat-card>
+     <app-scheduleorsent></app-scheduleorsent>
+     <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container> 

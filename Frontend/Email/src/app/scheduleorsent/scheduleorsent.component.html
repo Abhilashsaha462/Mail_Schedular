@@ -1,0 +1,19 @@
+<div class="schemail" style="margin-left:550px;margin-right:50px">
+    <mat-card class="example-card">
+        <mat-card-title>Schedule Email</mat-card-title>
+        <h5 >New Email</h5>
+        <mat-card-content class="card">
+            <form action="" [formGroup]="emailData">
+                <input type="text" placeholder="To" formControlName="to"><br><br>
+                <input type="text" placeholder="cc" formControlName="cc"><br><br>
+                <input type="text" placeholder="Bcc" formControlName="bcc"><br><br>
+                <input type="text" placeholder="Subject" formControlName="subject"><br><br>
+                <textarea name="body" placeholder="Body" id="" cols="43" rows="5" formControlName="body"></textarea><br><br>
+                <input type="date" formControlName="date" #startdate style="color: azure;" >&nbsp;&nbsp;
+                <input type="time" formControlName="time" #starttime style="color: azure;" ><br><br>
+                <button mat-raised-button style="color: peachpuff;" (click)="saveData()">Schedule Email</button> &nbsp;&nbsp;
+                <button class="btn" mat-raised-button style="color: peachpuff;">Discard Changes</button>
+            </form>
+        </mat-card-content>
+      </mat-card>
+</div>

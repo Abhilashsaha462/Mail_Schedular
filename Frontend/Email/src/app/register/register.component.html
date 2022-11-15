@@ -1,0 +1,41 @@
+<h2>Registration Form</h2>
+<h3>
+    <form (submit)="saveData1()" [formGroup]="regForm" action="">
+        Enter Email Address
+        <input type="text" formControlName="email" /><br>
+        <div *ngIf="regForm.controls['email'].hasError('required')">
+            Email is Required </div>
+          <div *ngIf="regForm.controls['email'].hasError('minlength')">
+            Email min length Required i.e 10
+          </div>
+          <div *ngIf="regForm.controls['email'].hasError('maxlength')">
+            Email max length Required i.e 25         
+        </div>
+        <br>
+        Enter Password
+        <input type="text" formControlName="password" /><br>
+        <div *ngIf="regForm.controls['password'].hasError('required')">
+            Password is Required </div>
+          <div *ngIf="regForm.controls['password'].hasError('minlength')">
+            Password min length Required i.e 5
+          </div>
+          <div *ngIf="regForm.controls['password'].hasError('maxlength')">
+            Password max length Required i.e 10
+          </div>
+          <br>    
+        Enter Confirm Password
+        <input type="text" formControlName="confirmpassword" /><br>
+        <div *ngIf="regForm.controls['confirmpassword'].hasError('required')">
+           Confirm Password is Required </div>
+          <div *ngIf="regForm.controls['confirmpassword'].hasError('minlength')">
+           Confirm Password min length Required i.e 5
+          </div>
+          <div *ngIf="regForm.controls['confirmpassword'].hasError('maxlength')">
+           Confirm Password max length Required i.e 10
+          </div>
+          <br>    
+        
+        <input  type="submit" value="REGISTER" [disabled]="regForm.invalid"/>
+   
+    </form>
+</h3>

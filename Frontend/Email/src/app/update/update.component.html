@@ -1,0 +1,44 @@
+<form [formGroup]=" updateData" class="normal-form" (submit)="onSubmit()">
+    <mat-grid-list cols="2" rowHeight="300px">
+      <mat-grid-tile>
+        <div class="controles-container">
+          <mat-form-field>
+            <input type="text" formControlName="accountName" placeholder="AccountName">
+            <mat-error>This field is mandatory.</mat-error>
+          </mat-form-field>
+          <h2>Credentials</h2>
+          <mat-form-field>
+            <input type="text" formControlName="email" placeholder="Email">
+            <mat-error>Invalid email address.</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input  type="text" formControlName="password" placeholder="Password">
+          </mat-form-field>
+          <H2>Incoming Server Details</H2>
+          <mat-form-field>
+            <input type="text" formControlName="inServer" placeholder="InServer">
+          </mat-form-field>
+          <mat-form-field>
+            <input type="number" formControlName="inServerPort" placeholder="InServerPort">
+          </mat-form-field>
+  
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="controles-container">
+          <H2>Outgoing Server Details Server Details</H2>
+          <mat-form-field>
+            <input type="text" formControlName="outServer" placeholder="OutServer">
+          </mat-form-field>
+          <mat-form-field>
+            <input type="text" formControlName="outServerPort" placeholder="OutServerPort">
+          </mat-form-field>
+
+          <div class="button-row">
+            <button mat-raised-button color="primary" type="submit">Submit</button>
+            <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
